@@ -1,6 +1,6 @@
 image = imread('bellucci_gray.jpg')
-neighbourhood = 20
+neighbourhoo
 image = im2double(image);
 fun = @(x) mean(x(:)); 
-B = nlfilter(image,[neighbourhood neighbourhood],fun); 
+B = nlfilter(image,[3 3],fun); 
 imshow(image), figure, imshow(B)
